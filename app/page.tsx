@@ -1,20 +1,22 @@
+import { DotSquare } from "@/components/dot-square";
 import NavBar from "@/components/navbar";
+import ProjectCard from "@/components/project-card";
+import Quote from "@/components/quote";
+import SimpleCard from "@/components/simple-card";
+
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-} from "@/components/ui/card";
-import { Phone } from "lucide-react";
+import { Card, CardContent, CardDescription } from "@/components/ui/card";
+import { Phone, Square } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const page = () => {
   return (
-    <div>
+    <div className="w-[70%] flex flex-col gap-14">
+      {/* contacts line */}
       <div className="hidden lg:flex fixed  flex-col justify-center left-1 top-0 gap-5">
         <div className="w-px h-[100px] bg-foreground self-center"></div>
+        {/* top-left contacts */}
         <div>
           <Card className="self-center flex flex-col bg-transparent border-none m-0 p-0">
             <CardContent>
@@ -66,20 +68,126 @@ const page = () => {
       </div>
 
       <NavBar />
-      {/* <h1 className=" text-5xl">Home Page</h1> */}
-      <Card>
-        <CardHeader>I&apos;m a web designer and front-end developer</CardHeader>
-        <CardDescription>
-          He crafts responsive websites where technologies meet creativity{" "}
-        </CardDescription>
-        <Button>Contact me</Button>
-        <Image
-          width={300} // in pixels
-          height={200} // in pixels
-          alt="face image"
-          src={"./vercel.svg"}
-        ></Image>
-      </Card>
+      {/* hero card */}
+      <div className="w-full">
+        <Card className="flex flex-row justify-between bg-transparent border-none shadow-none">
+          {/* left side */}
+          <div className="basis-[50%] flex flex-col items-start justify-center">
+            <CardContent className="text-3xl leading-14">
+              I&apos;m a <span className="text-purple">web designer</span> and
+              <br />
+              <span className="text-purple"> front-end developer</span>
+            </CardContent>
+            <CardContent>
+              <CardDescription className="text-base">
+                He crafts responsive websites where technologies <br /> meet
+                creativity
+              </CardDescription>
+            </CardContent>
+            <CardContent>
+              <Button className="rounded-none border border-purple bg-transparent text-foreground mt-5">
+                Contact me!!
+              </Button>
+            </CardContent>
+          </div>
+          {/* right side */}
+          <div className="basis-[50%] relative">
+            <Card className="flex flex-row w-auto absolute bottom-0 p-1 rounded-none">
+              <Square fill="purple" stroke="purple" /> Currently working on
+              something.
+            </Card>
+            <Image
+              width={300} // in pixels
+              height={200} // in pixels
+              alt="face image"
+              src={"./vercel.svg"}
+            />
+            <DotSquare className="absolute top-[50%] right-0" />
+          </div>
+        </Card>
+      </div>
+      {/* Quote */}
+      <div className="relative flex justify-center">
+        <Quote
+          text="With great power comes great electricity bill"
+          by="- Dr. Who"
+        />
+      </div>
+      {/* projects */}
+      <div>
+        <span className=" text-xl flex items-center gap-2 pb-6">
+          <span className="text-purple-500">#</span>
+          projects
+          <div className="h-0.5 w-[40%] bg-purple"></div>
+          <Link className="text-base ml-auto" href={"/projects"}>
+            View all ⟿
+          </Link>
+        </span>
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4">
+          <ProjectCard
+            src="./vercel.svg"
+            description="string"
+            title="string"
+            description2="string"
+            btnText="string"
+          ></ProjectCard>
+          <ProjectCard
+            src="./vercel.svg"
+            description="string"
+            title="string"
+            description2="string"
+            btnText="string"
+          ></ProjectCard>
+          <ProjectCard
+            src="./vercel.svg"
+            description="string"
+            title="string"
+            description2="string"
+            btnText="string"
+          ></ProjectCard>
+          <ProjectCard
+            src="./vercel.svg"
+            description="string"
+            title="string"
+            description2="string"
+            btnText="string"
+          ></ProjectCard>
+        </div>
+      </div>
+
+      {/* skills */}
+      <div>
+        <span className=" text-xl flex items-center gap-2 pb-6 pt-6">
+          <span className="text-purple-500">#</span>
+          skills
+          <div className="h-0.5 w-[40%] bg-purple"></div>
+          <Link className="text-base ml-auto" href={"/projects"}>
+            View all ⟿
+          </Link>
+        </span>
+        <div className="flex">
+          <div className="relative bg-blue-800 w-2/5">
+            <DotSquare gap={2} className="absolute top-10 left-20"></DotSquare>
+            <DotSquare gap={2}></DotSquare>
+          </div>
+          <div className="flex-1">
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4 ">
+              <SimpleCard
+                title="languages"
+                description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
+              />
+              <SimpleCard
+                title="languages"
+                description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
+              />
+              <SimpleCard
+                title="languages"
+                description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

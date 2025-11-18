@@ -32,7 +32,7 @@ const NavBar = () => {
   return (
     <div className="w-full">
       {/* desktop */}
-      <nav className="flex w-full lg:w-3/4 mx-auto bg-red justify-between items-center m-5 lg:mt-10">
+      <nav className="flex w-full lg:w-full mx-auto bg-red justify-between items-center m-5 lg:mt-10">
         <div className="text-2xl">Logo</div>
         <Button
           className="lg:hidden scale-200"

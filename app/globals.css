@@ -65,6 +65,7 @@ body {
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-purple: oklch(62.7% 0.265 303.9);
 }
 
 :root {

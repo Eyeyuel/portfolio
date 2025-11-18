@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { IncompleteSquare } from "@/components/incomplete-square";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const firaCode = Fira_Code({
   subsets: ["latin"],
 });
 
@@ -26,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${firaCode.className} antialiased relative flex flex-col items-center gap-80`}
       >
         <ThemeProvider
           attribute="class"
@@ -34,6 +29,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <IncompleteSquare missingSide="r" className="top-[60vh] right-0" />
+          <IncompleteSquare
+            missingSide="r"
+            className="top-[120vh] right-0 h-30 w-[60px]"
+          />
           {children}
         </ThemeProvider>
       </body>
