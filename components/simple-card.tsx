@@ -8,7 +8,7 @@ const SimpleCard = ({
   description: string;
 }) => {
   return (
-    <Card className="rounded-none bg-transparent">
+    <Card className="rounded-none bg-transparent h-fit">
       <CardTitle className="border-b">{title}</CardTitle>
       <CardDescription>{description}</CardDescription>
     </Card>

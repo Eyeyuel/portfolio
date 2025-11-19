@@ -9,7 +9,11 @@ export function DotSquare({
   const dots = Array.from({ length: size * size });
 
   return (
-    <div className={`grid grid-cols-5 gap-${gap} w-fit p-2 ${className || ""}`}>
+    <div
+      className={`absolute grid grid-cols-5 gap-${gap} w-fit p-2 ${
+        className || ""
+      }`}
+    >
       {dots.map((_, i) => (
         <div
           key={i}

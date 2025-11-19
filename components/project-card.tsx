@@ -16,7 +16,7 @@ const ProjectCard = ({
   btnText: string;
 }) => {
   return (
-    <Card className="flex flex-col rounded-none bg-transparent gap-4">
+    <Card className="flex flex-col rounded-none bg-transparent h-fit gap-4">
       <CardContent className="border-b">
         <Image
           width={300} // in pixels

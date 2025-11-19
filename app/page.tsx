@@ -1,4 +1,5 @@
 import { DotSquare } from "@/components/dot-square";
+import { IncompleteSquare } from "@/components/incomplete-square";
 import NavBar from "@/components/navbar";
 import ProjectCard from "@/components/project-card";
 import Quote from "@/components/quote";
@@ -14,6 +15,7 @@ const page = () => {
   return (
     <div className="w-[70%] flex flex-col gap-14">
       {/* contacts line */}
+
       <div className="hidden lg:flex fixed  flex-col justify-center left-1 top-0 gap-5">
         <div className="w-px h-[100px] bg-foreground self-center"></div>
         {/* top-left contacts */}
@@ -68,7 +70,9 @@ const page = () => {
       </div>
 
       <NavBar />
+
       {/* hero card */}
+
       <div className="w-full">
         <Card className="flex flex-row justify-between bg-transparent border-none shadow-none">
           {/* left side */}
@@ -106,7 +110,9 @@ const page = () => {
           </div>
         </Card>
       </div>
+
       {/* Quote */}
+
       <div className="relative flex justify-center">
         <Quote
           text="With great power comes great electricity bill"
@@ -118,7 +124,7 @@ const page = () => {
         <span className=" text-xl flex items-center gap-2 pb-6">
           <span className="text-purple-500">#</span>
           projects
-          <div className="h-0.5 w-[40%] bg-purple"></div>
+          <div className="h-0.5 w-[55%] bg-purple"></div>
           <Link className="text-base ml-auto" href={"/projects"}>
             View all ⟿
           </Link>
@@ -135,7 +141,7 @@ const page = () => {
             src="./vercel.svg"
             description="string"
             title="string"
-            description2="string"
+            description2="string aslkdjflksad lkjsdlkfj asdlkf jasdlkfj laskjdf laskdjf laksdj flaskjdfl kjsadlkfj lkfjsl;kdjf lkdjslfk ajdlf"
             btnText="string"
           ></ProjectCard>
           <ProjectCard
@@ -160,32 +166,84 @@ const page = () => {
         <span className=" text-xl flex items-center gap-2 pb-6 pt-6">
           <span className="text-purple-500">#</span>
           skills
-          <div className="h-0.5 w-[40%] bg-purple"></div>
-          <Link className="text-base ml-auto" href={"/projects"}>
-            View all ⟿
-          </Link>
+          <div className="h-0.5 w-[25%] bg-purple"></div>
         </span>
         <div className="flex">
-          <div className="relative bg-blue-800 w-2/5">
-            <DotSquare gap={2} className="absolute top-10 left-20"></DotSquare>
-            <DotSquare gap={2}></DotSquare>
+          <div className="relative w-2/5">
+            <DotSquare gap={2} className=" top-50 right-30"></DotSquare>
+            <DotSquare gap={2} className=" top-16 left-16"></DotSquare>
+            <IncompleteSquare className="w-[70px] h-[70px] top-10 right-30" />
+            <IncompleteSquare className="bottom-10 right-5 w-[40px] h-[40px]" />
           </div>
           <div className="flex-1">
             <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4 ">
-              <SimpleCard
-                title="languages"
-                description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
-              />
-              <SimpleCard
-                title="languages"
-                description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
-              />
-              <SimpleCard
-                title="languages"
-                description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
-              />
+              <div>
+                <SimpleCard
+                  title="languages"
+                  description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
+                />
+              </div>
+              <div className="space-y-4">
+                <SimpleCard
+                  title="languages"
+                  description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+                />
+                <SimpleCard
+                  title="languages"
+                  description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
+                />
+              </div>
+              <div className="space-y-4">
+                <SimpleCard
+                  title="languages"
+                  description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
+                />
+                <SimpleCard
+                  title="languages"
+                  description="lorem lsadjflksd saldjf lskdjf asjdflskd flsdsdlakflasd lksdjf lksajdf lkasd lksda"
+                />
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+      {/* about me */}
+      <div>
+        <span className=" text-xl flex items-center gap-2 pb-6 pt-6">
+          <span className="text-purple-500">#</span>
+          about-me
+          <div className="h-0.5 w-[40%] bg-purple"></div>
+        </span>
+        <div className="w-full">
+          <Card className="flex flex-row justify-between bg-transparent border-none shadow-none">
+            {/* left side */}
+            <div className="basis-[50%] flex flex-col items-start justify-between">
+              <CardDescription>Hello, i&apos;m Eyuel!</CardDescription>
+              <CardDescription>
+                I’m a self-taught front-end developer based in Kyiv, Ukraine. I
+                can develop responsive websites from scratch and raise them into
+                modern user-friendly web experiences.
+              </CardDescription>
+              <CardDescription>
+                Transforming my creativity and knowledge into a websites has
+                been my passion for over a year. I have been helping various
+                clients to establish their presence online. I always strive to
+                learn about the newest technologies and frameworks.
+              </CardDescription>
+            </div>
+            {/* right side */}
+            <div className="basis-[50%] relative">
+              <Image
+                width={300} // in pixels
+                height={200} // in pixels
+                alt="face image"
+                src={"./vercel.svg"}
+              />
+
+              <DotSquare gap={2} className="absolute top-[30%] right-[20%]" />
+              <DotSquare gap={2} className="absolute top-0 left-0" />
+            </div>
+          </Card>
         </div>
       </div>
     </div>

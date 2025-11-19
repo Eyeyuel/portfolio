@@ -3,6 +3,7 @@ import { Fira_Code } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { IncompleteSquare } from "@/components/incomplete-square";
+import { DotSquare } from "@/components/dot-square";
 
 const firaCode = Fira_Code({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
             missingSide="r"
             className="top-[120vh] right-0 h-30 w-[60px]"
           />
+          <DotSquare className="top-[340vh] right-0" />
           {children}
         </ThemeProvider>
       </body>
