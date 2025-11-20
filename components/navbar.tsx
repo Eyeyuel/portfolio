@@ -19,7 +19,7 @@ const NavBar = () => {
     },
     {
       name: "about-me",
-      path: "/about-me",
+      path: "/about",
     },
     {
       name: "contacts",

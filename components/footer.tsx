@@ -13,7 +13,7 @@ const Footer = () => {
           </div>
 
           <CardContent>
-            <CardDescription>
+            <CardDescription className="text-card-foreground">
               Web designer and fullstack developer
             </CardDescription>
           </CardContent>

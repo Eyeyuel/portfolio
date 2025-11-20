@@ -86,7 +86,7 @@ export default function RootLayout({
               </Card>
             </div>
           </div>
-          <div className="w-[70%]">
+          <div className="w-[80%]">
             <NavBar />
 
             {children}
