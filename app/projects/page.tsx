@@ -21,7 +21,7 @@ const page = () => {
           List of my projects
         </CardDescription>
       </div>
-      <div className="mt-48">
+      <div className="mt-20">
         <Title>Complete-apps</Title>
         {/* projects */}
         <div>

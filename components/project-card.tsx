@@ -19,7 +19,7 @@ const ProjectCard = ({
     <Card className="flex flex-col rounded-none bg-transparent h-fit gap-4">
       <CardContent className="border-b">
         <Image
-          width={300} // in pixels
+          width={150} // in pixels
           height={200} // in pixels
           alt="face image"
           src={src}
@@ -30,7 +30,7 @@ const ProjectCard = ({
       </CardDescription>
       <CardContent className="flex flex-col gap-2">
         <CardTitle className="text-xl">{title}</CardTitle>
-        <CardDescription>{description2}</CardDescription>
+        <CardDescription className="text-base">{description2}</CardDescription>
         <Button className="bg-transparent w-fit text-foreground rounded-none border border-purple">
           {btnText} &#x21ad;
         </Button>

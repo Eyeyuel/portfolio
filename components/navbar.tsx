@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { ModeToggle } from "./theme-toggle";
 import { Button } from "./ui/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, Phone, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { Card, CardContent } from "./ui/card";
@@ -29,6 +29,18 @@ const NavBar = () => {
 
   const [navOpen, setNavOpen] = useState(false);
 
+  useEffect(() => {
+    if (navOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [navOpen]);
+
   return (
     <div className="w-full">
       {/* desktop */}
@@ -45,7 +57,7 @@ const NavBar = () => {
           {paths.map((path) => (
             <Link key={path.path} href={path.path}>
               <Button
-                className="text-2xl cursor-pointer"
+                className="text-base font-medium cursor-pointer"
                 variant="link"
                 size={"lg"}
               >
@@ -66,13 +78,13 @@ const NavBar = () => {
       <AnimatePresence>
         {navOpen && (
           <motion.div
-            className="fixed top-0 right-0 h-screen w-full"
+            className="bg-background fixed top-0 bottom-0 left-0 right-0 inset-0 z-50 min-h-dvh"
             initial={{ x: "100vw" }}
             animate={{ x: 0 }}
             exit={{ x: "100vw" }}
             transition={{ duration: 0.1, ease: "linear" }}
           >
-            <nav className="fixed top-0 right-0 h-screen w-full bg-background p-5">
+            <nav className="w-full h-full p-5 overflow-y-auto">
               <div className="flex justify-between">
                 <div className="text-2xl p-1.5">Logo</div>
                 <Button
@@ -101,7 +113,7 @@ const NavBar = () => {
                 <div className="ml-[5%]">
                   <ModeToggle />
                 </div>
-                <Card className="self-center flex flex-row bg-background border-none gap-1">
+                <Card className="self-center flex flex-row bg-background shadow-none border-none gap-1">
                   <CardContent>
                     <Link href={"https://github.com/eyeyuel"} target="_blank">
                       <svg

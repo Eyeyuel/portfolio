@@ -19,31 +19,33 @@ const page = () => {
   return (
     <div className="flex flex-col gap-14">
       {/* shapes */}
-      <IncompleteSquare className="top-[60vh] right-0 border-r-0" />
-      <IncompleteSquare className="top-[120vh] right-0 h-30 w-[60px] border-r-0" />
-      <IncompleteSquare className="top-[330vh] left-0 h-30 w-[50px] border-l-0" />
-      <DotSquare col={4} className="top-[340vh] right-0 grid-cols-4" />
-      <DotSquare col={2} row={4} className="top-[110vh] left-0 grid-cols-2" />
-      <DotSquare col={3} row={5} className="top-[380vh] left-0 grid-cols-3" />
+      <div className="hidden lg:block">
+        <IncompleteSquare className="top-[60vh] right-0 border-r-0" />
+        <IncompleteSquare className="top-[120vh] right-0 h-30 w-[60px] border-r-0" />
+        <IncompleteSquare className="top-[330vh] left-0 h-30 w-[50px] border-l-0" />
+        <DotSquare col={4} className="top-[340vh] right-0 grid-cols-4" />
+        <DotSquare col={2} row={4} className="top-[110vh] left-0 grid-cols-2" />
+        <DotSquare col={3} row={5} className="top-[380vh] left-0 grid-cols-3" />
+      </div>
 
       {/* hero card */}
 
       <div className="w-full">
-        <Card className="flex flex-row justify-between bg-transparent border-none shadow-none">
+        <Card className="flex flex-col lg:flex-row justify-between bg-transparent border-none shadow-none">
           {/* left side */}
           <div className="basis-[50%] flex flex-col items-start justify-center">
-            <CardContent className="text-3xl leading-14">
+            <CardContent className="text-3xl font-semibold leading-11">
               I&apos;m a <span className="text-purple">web designer</span> and
               <br />
               <span className="text-purple"> front-end developer</span>
             </CardContent>
             <CardContent>
-              <CardDescription className="text-base">
+              <CardDescription className="text-base mt-10">
                 He crafts responsive websites where technologies <br /> meet
                 creativity
               </CardDescription>
             </CardContent>
-            <CardContent>
+            <CardContent className="hidden lg:block">
               <Button className="rounded-none border border-purple bg-transparent text-foreground mt-5">
                 Contact me!!
               </Button>
@@ -76,11 +78,14 @@ const page = () => {
       </div>
       {/* projects */}
       <div>
-        <span className=" text-xl flex items-center gap-2 pb-6">
+        <span className=" text-xl text-card-foreground flex items-center gap-2 pb-6">
           <span className="text-purple">#</span>
           projects
           <div className="h-0.5 w-[55%] bg-purple"></div>
-          <Link className="text-base ml-auto" href={"/projects"}>
+          <Link
+            className="hidden lg:block text-base ml-auto"
+            href={"/projects"}
+          >
             View all ⟿
           </Link>
         </span>
@@ -118,43 +123,43 @@ const page = () => {
 
       {/* skills */}
       <div>
-        <span className=" text-xl flex items-center gap-2 pb-6 pt-6">
+        <span className=" text-xl text-card-foreground flex items-center gap-2 pb-6 pt-6">
           <span className="text-purple">#</span>
           skills
           <div className="h-0.5 w-[25%] bg-purple"></div>
         </span>
         <div className="flex">
-          <div className="relative w-2/5">
+          <div className="hidden lg:block relative w-2/5">
             <DotSquare gap={2} className=" top-50 right-30 grid-cols-5" />
             <DotSquare gap={2} className=" top-16 left-16 grid-cols-5" />
             <IncompleteSquare className="w-[70px] h-[70px] top-10 right-30" />
             <IncompleteSquare className="bottom-10 right-5 w-[40px] h-[40px]" />
           </div>
           <div className="flex-1">
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4 ">
+            <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-4 ">
               <div>
                 <SimpleCard
-                  title="languages"
+                  title="Languages"
                   description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
                 />
               </div>
-              <div className="space-y-4">
+              <div className="lg:space-y-4">
                 <SimpleCard
-                  title="languages"
+                  title="Databases"
                   description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
                 />
                 <SimpleCard
-                  title="languages"
+                  title="Other"
                   description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
                 />
               </div>
               <div className="space-y-4">
                 <SimpleCard
-                  title="languages"
+                  title="Tools"
                   description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
                 />
                 <SimpleCard
-                  title="languages"
+                  title="FrameWorks"
                   description="lorem lsadjflksd saldjf lskdjf asjdflskd flsdsdlakflasd lksdjf lksajdf lkasd lksda"
                 />
               </div>
@@ -164,13 +169,13 @@ const page = () => {
       </div>
       {/* about me */}
       <div>
-        <span className=" text-xl flex items-center gap-2 pb-6 pt-6">
+        <span className=" text-xl text-card-foreground flex items-center gap-2 pb-6 pt-6">
           <span className="text-purple">#</span>
           about-me
           <div className="h-0.5 w-[40%] bg-purple"></div>
         </span>
         <div className="w-full">
-          <Card className="flex flex-row justify-between bg-transparent border-none shadow-none">
+          <Card className="flex md:flex-row justify-between bg-transparent border-none shadow-none">
             {/* left side */}
             <div className="basis-[50%] flex flex-col items-start justify-between">
               <CardDescription>Hello, i&apos;m Eyuel!</CardDescription>
@@ -187,7 +192,7 @@ const page = () => {
               </CardDescription>
             </div>
             {/* right side */}
-            <div className="basis-[50%] relative">
+            <div className="hidden md:block basis-[50%] relative">
               <Image
                 width={300} // in pixels
                 height={200} // in pixels
@@ -212,12 +217,12 @@ const page = () => {
       {/* contacts */}
 
       <div className="h-[30vh]">
-        <span className=" text-xl flex items-center gap-2 pb-6 pt-6">
+        <span className=" text-xl text-card-foreground flex items-center gap-2 pb-6 pt-6">
           <span className="text-purple">#</span>
           contacts
           <div className="h-0.5 w-[20%] bg-purple"></div>
         </span>
-        <Card className="flex-row items-end justify-end bg-transparent h-full border-none shadow-none">
+        <Card className="md:flex-row items-end justify-end bg-transparent h-full border-none shadow-none">
           <CardContent className="flex-1 self-start">
             <CardDescription>
               I’m interested in freelance opportunities. However, if you have

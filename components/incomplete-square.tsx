@@ -6,7 +6,7 @@ export function IncompleteSquare({
 }) {
   return (
     <div
-      className={`absolute w-20 h-20 border-2 border-foreground ${
+      className={`absolute w-5 h-5 lg:w-20 lg:h-20 border-2 border-foreground ${
         className || ""
       }`}
     />

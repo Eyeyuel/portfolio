@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${firaCode.className} antialiased relative flex flex-col items-center gap-60`}
+        className={`${firaCode.className} antialiased w-screen relative flex flex-col items-center bg-amber-950 gap-60`}
       >
         <ThemeProvider
           attribute="class"
@@ -86,12 +86,12 @@ export default function RootLayout({
               </Card>
             </div>
           </div>
-          <div className="w-[80%]">
+          <div className="w-full bg-amber-300 lg:w-[80%]">
             <NavBar />
 
             {children}
           </div>
-          <Footer />
+          {/* <Footer /> */}
         </ThemeProvider>
       </body>
     </html>

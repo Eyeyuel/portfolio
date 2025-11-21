@@ -5,8 +5,8 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <Card className="bg-transparent w-full rounded-none border-0 border-t-2 flex flex-col items-center gap-20 shadow-none">
-      <CardContent className="flex justify-between w-full">
-        <CardContent>
+      <CardContent className=" flex justify-between p-0 w-full">
+        <CardContent className="w-2/3">
           <div className="flex space-x-6">
             <CardHeader>Logo</CardHeader>
             <CardDescription>eyueltk@gmail.com</CardDescription>
@@ -18,7 +18,7 @@ const Footer = () => {
             </CardDescription>
           </CardContent>
         </CardContent>
-        <CardContent className="flex flex-col gap-1 items-center">
+        <CardContent className=" flex flex-col gap-1 items-center w-1/3">
           <CardContent>
             <p className="font-bold">Media</p>
           </CardContent>
