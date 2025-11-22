@@ -87,7 +87,7 @@ export default function RootLayout({
             </div>
           </div>
           <main className="w-full md:w-4/5 lg:w-3/4">
-            {/* <NavBar /> */}
+            <NavBar />
 
             {children}
           </main>
