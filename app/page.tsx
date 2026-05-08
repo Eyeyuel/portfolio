@@ -14,6 +14,11 @@ import {
 import { Square } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import profile from "@/public/pfp.jpg";
+import mekazino from "@/public/mekazino.png";
+import nestjslogo from "@/public/nestjsLogo.png";
+import { FaTelegramPlane } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 const page = () => {
   return (
@@ -35,9 +40,9 @@ const page = () => {
           {/* left side */}
           <div className="basis-[50%] flex flex-col items-start justify-center">
             <CardContent className="text-3xl font-semibold leading-11">
-              I&apos;m a <span className="text-purple">web designer</span> and
+              I&apos;m a <span className="text-purple">Full Stack </span> and
               <br />
-              <span className="text-purple"> front-end developer</span>
+              <span className="text-purple"> Mobile Developer</span>
             </CardContent>
             <CardContent>
               <CardDescription className="text-base mt-10">
@@ -54,14 +59,14 @@ const page = () => {
           {/* right side */}
           <div className="basis-[50%] relative">
             <Card className="flex flex-row w-auto absolute bottom-0 p-1 rounded-none">
-              <Square fill="purple" stroke="purple" /> Currently working on
-              something.
+              <Square fill="purple" stroke="purple" /> Currently working on nx
+              monorepo nestjs.
             </Card>
             <Image
               width={300} // in pixels
               height={200} // in pixels
               alt="face image"
-              src={"./vercel.svg"}
+              src={profile}
             />
             <DotSquare className="absolute top-[50%] right-0 grid-cols-5" />
           </div>
@@ -91,32 +96,27 @@ const page = () => {
         </span>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4">
           <ProjectCard
-            src="./vercel.svg"
-            description="string"
-            title="string"
-            description2="string"
-            btnText="string"
+            src={nestjslogo}
+            description="nx monorepo, nestjs, microservices, rabbitmq"
+            title="Multi-Tenant Inventory Management System"
+            // description2="string"
+            btnText="github"
+            url="https://github.com/Eyeyuel/inventory-system"
           ></ProjectCard>
           <ProjectCard
-            src="./vercel.svg"
-            description="string"
-            title="string"
-            description2="string aslkdjflksad lkjsdlkfj asdlkf jasdlkfj laskjdf laskdjf laksdj flaskjdfl kjsadlkfj lkfjsl;kdjf lkdjslfk ajdlf"
-            btnText="string"
+            src={nestjslogo}
+            description="nextjs for both backend and frontend, tailwind"
+            title="Real Estate Payment Management System "
+            // description2="string aslkdjflksad lkjsdlkfj asdlkf "
+            // btnText="string"
           ></ProjectCard>
           <ProjectCard
-            src="./vercel.svg"
-            description="string"
-            title="string"
+            src={mekazino}
+            description="nextjs, tailwind, shadcn ui, zustand, typescript"
+            title="Mekazino Inventory Management System"
             description2="string"
             btnText="string"
-          ></ProjectCard>
-          <ProjectCard
-            src="./vercel.svg"
-            description="string"
-            title="string"
-            description2="string"
-            btnText="string"
+            url="https://github.com/Eyeyuel/inventory-app"
           ></ProjectCard>
         </div>
       </div>
@@ -140,27 +140,24 @@ const page = () => {
               <div>
                 <SimpleCard
                   title="Languages"
-                  description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
+                  description="Typescript, JavaScript, Python"
                 />
               </div>
               <div className="lg:space-y-4">
                 <SimpleCard
                   title="Databases"
-                  description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+                  description="PostgreSQL, MongoDB, MySQL, Redis"
                 />
                 <SimpleCard
                   title="Other"
-                  description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
+                  description="REST API, Microservices, Tailwind, shadcn ui"
                 />
               </div>
               <div className="space-y-4">
-                <SimpleCard
-                  title="Tools"
-                  description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda"
-                />
+                <SimpleCard title="Tools" description="Git, Docker, RabbitMQ" />
                 <SimpleCard
                   title="FrameWorks"
-                  description="lorem lsadjflksd saldjf lskdjf asjdflskd flsdsdlakflasd lksdjf lksajdf lkasd lksda"
+                  description="Nestjs, Nextjs, React, Express"
                 />
               </div>
             </div>
@@ -177,18 +174,21 @@ const page = () => {
         <div className="w-full">
           <Card className="flex md:flex-row justify-between bg-transparent border-none shadow-none">
             {/* left side */}
-            <div className="basis-[50%] flex flex-col items-start justify-between">
+            <div className="px-5 md:p-0 basis-[50%] flex flex-col items-start justify-between">
               <CardDescription>Hello, i&apos;m Eyuel!</CardDescription>
               <CardDescription>
-                I’m a self-taught front-end developer based in Kyiv, Ukraine. I
-                can develop responsive websites from scratch and raise them into
-                modern user-friendly web experiences.
+                I’m a full-stack developer with experience building modern,
+                scalable, and user-friendly web applications using both frontend
+                and backend technologies. I develop responsive applications from
+                scratch and turn ideas into reliable digital solutions with
+                clean and efficient system design.
               </CardDescription>
               <CardDescription>
-                Transforming my creativity and knowledge into a websites has
-                been my passion for over a year. I have been helping various
-                clients to establish their presence online. I always strive to
-                learn about the newest technologies and frameworks.
+                Building software and solving real-world problems through
+                technology is a strong passion of mine. I enjoy helping clients
+                create effective web solutions while continuously improving my
+                skills and staying up to date with modern technologies and
+                development practices.
               </CardDescription>
             </div>
             {/* right side */}
@@ -230,33 +230,26 @@ const page = () => {
             </CardDescription>
           </CardContent>
           <CardContent className=" flex-1 self-center">
-            <CardContent className="w-fit p-6 border-2 ml-auto mt-auto space-y-1">
+            <CardContent className="w-fit p-6 border-2 ml-auto mt-auto space-y-5">
               <CardTitle>Message me here!</CardTitle>
-              <CardDescription className="flex gap-2">
-                <svg
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5  fill-current"
+              <CardDescription className="flex gap-2 cursor-pointer">
+                <Link
+                  href={`https://t.me/Eyuel_Teklu`}
+                  target="_blank"
+                  className="flex gap-2"
                 >
-                  <title>Discord</title>
-                  <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" />
-                </svg>
-                <CardDescription>something</CardDescription>
-              </CardDescription>
-              <CardDescription className="flex gap-2">
-                <Link href={`mailto:eyueltk@gmail.com`}>
-                  <svg
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5  fill-current"
-                  >
-                    <title>Gmail</title>
-                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
-                  </svg>
+                  <FaTelegramPlane className="w-5 h-5" />
+                  <CardDescription>Eyuel_Teklu</CardDescription>
                 </Link>
-                <CardDescription>something</CardDescription>
+              </CardDescription>
+              <CardDescription className="flex gap-2 cursor-pointer">
+                <Link
+                  href={`mailto:eyueltklu27@gmail.com`}
+                  className="flex gap-2"
+                >
+                  <SiGmail className="w-5 h-5" />
+                  <CardDescription>eyueltklu27@gmail.com</CardDescription>
+                </Link>
               </CardDescription>
             </CardContent>
           </CardContent>

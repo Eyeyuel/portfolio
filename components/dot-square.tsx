@@ -15,7 +15,9 @@ export function DotSquare({
   return (
     <div
       // need to send grid-cols-${col} using the className prop
-      className={`absolute grid gap-${gap} w-fit p-2 ${className || ""}`}
+      className={`hidden absolute md:grid gap-${gap} w-fit p-2 ${
+        className || ""
+      }`}
     >
       {dots.map((_, i) => (
         <div

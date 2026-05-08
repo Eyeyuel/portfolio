@@ -24,22 +24,26 @@ const page = () => {
           <div className="w-full">
             <Card className="flex flex-row justify-between bg-transparent border-none shadow-none">
               {/* left side */}
-              <div className="basis-[50%] flex flex-col items-start justify-between">
+              <div className="flex flex-col items-start justify-between">
                 <CardDescription>Hello, i&apos;m Eyuel!</CardDescription>
                 <CardDescription>
-                  I’m a self-taught front-end developer based in Kyiv, Ukraine.
-                  I can develop responsive websites from scratch and raise them
-                  into modern user-friendly web experiences.
+                  I’m a full-stack developer with experience building modern,
+                  scalable, and user-friendly web applications using both
+                  frontend and backend technologies. I develop responsive
+                  applications from scratch and turn ideas into reliable digital
+                  solutions with clean and efficient system design.
                 </CardDescription>
+                <br />
                 <CardDescription>
-                  Transforming my creativity and knowledge into a websites has
-                  been my passion for over a year. I have been helping various
-                  clients to establish their presence online. I always strive to
-                  learn about the newest technologies and frameworks.
+                  Building software and solving real-world problems through
+                  technology is a strong passion of mine. I enjoy helping
+                  clients create effective web solutions while continuously
+                  improving my skills and staying up to date with modern
+                  technologies and development practices.
                 </CardDescription>
               </div>
               {/* right side */}
-              <div className="basis-[50%] relative">
+              <div className="hidden md:block basis-[50%] relative">
                 <Image
                   width={300} // in pixels
                   height={200} // in pixels
@@ -63,42 +67,58 @@ const page = () => {
       </div>
       <div>
         <Title>skills</Title>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,200px))] gap-4 ">
+        <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(150px,200px))] gap-4 ">
           <SimpleCard
             title="Languages"
-            description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+            description="Typescript, JavaScript, Python"
           />
           <SimpleCard
             title="Other"
-            description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+            description="REST API, Microservices, Tailwind, shadcn ui"
           />
           <SimpleCard
             title="Tools"
-            description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+            description="VS Code, Git, Docker, Postman, insomnia"
           />
           <SimpleCard
             title="Database"
-            description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+            description="PostgreSQL, MongoDB, MySQL, Redis"
           />
           <SimpleCard
             title="Frameworks"
-            description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+            description="Nestjs, Nextjs, React, Express"
           />
         </div>
       </div>
       <div>
         <Title>my-fun-facts</Title>
         <div>
-          <TextWithBorder>consectetur adipisicing elit.</TextWithBorder>
-          <TextWithBorder>Lorem, ipsum dolor.</TextWithBorder>
-          <TextWithBorder>Lorem ipsum dolor sit amet.</TextWithBorder>
           <TextWithBorder>
-            Lorem ipsum dolor sit amet consectetur.
+            Football is something I always keep up with, especially my favorite
+            teams.
           </TextWithBorder>
-          <TextWithBorder>Lorem, ipsum dolor.</TextWithBorder>
-          <TextWithBorder>Lorem ipsum dolor sit.</TextWithBorder>
+
           <TextWithBorder>
-            Lorem ipsum dolor sit amet consectetur.
+            I like taking long solo walks right before sunset when the day is
+            about to end.
+          </TextWithBorder>
+
+          <TextWithBorder>
+            Good conversations and time with friends are something I truly
+            value.
+          </TextWithBorder>
+
+          <TextWithBorder>
+            I’m curious about different places and enjoy learning about new
+            cultures.
+          </TextWithBorder>
+
+          <TextWithBorder>
+            Movies and series are my go-to way to relax in my free time.
+          </TextWithBorder>
+
+          <TextWithBorder>
+            I appreciate quiet moments that help me reset and think clearly.
           </TextWithBorder>
         </div>
       </div>

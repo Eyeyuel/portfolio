@@ -4,7 +4,8 @@ import ProjectCard from "@/components/project-card";
 import SimpleCard from "@/components/simple-card";
 import Title from "@/components/title";
 import { CardDescription } from "@/components/ui/card";
-import Link from "next/link";
+import nestjslogo from "@/public/nestjsLogo.png";
+import mekazino from "@/public/mekazino.png";
 
 const page = () => {
   return (
@@ -17,7 +18,7 @@ const page = () => {
 
       <div>
         <Title symbol="/">projects</Title>
-        <CardDescription className="text-card-foreground">
+        <CardDescription className="pl-5 md:pl-0 text-card-foreground">
           List of my projects
         </CardDescription>
       </div>
@@ -27,76 +28,66 @@ const page = () => {
         <div>
           <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4">
             <ProjectCard
-              src="./vercel.svg"
-              description="string"
-              title="string"
-              description2="string"
-              btnText="string"
+              src={nestjslogo}
+              description="nx monorepo, nestjs, microservices, rabbitmq"
+              title="Multi-Tenant Inventory Management System"
+              // description2="string"
+              btnText="github"
+              url="https://github.com/Eyeyuel/inventory-system"
             ></ProjectCard>
             <ProjectCard
-              src="./vercel.svg"
-              description="string"
-              title="string"
-              description2="string aslkdjflksad lkjsdlkfj asdlkf jasdlkfj laskjdf laskdjf laksdj flaskjdfl kjsadlkfj lkfjsl;kdjf lkdjslfk ajdlf"
-              btnText="string"
+              src={nestjslogo}
+              description="nextjs for both backend and frontend, tailwind"
+              title="Real Estate Payment Management System "
+              // description2="string aslkdjflksad lkjsdlkfj asdlkf "
+              // btnText="string"
             ></ProjectCard>
             <ProjectCard
-              src="./vercel.svg"
-              description="string"
-              title="string"
+              src={mekazino}
+              description="nextjs, tailwind, shadcn ui, zustand, typescript"
+              title="Mekazino Inventory Management System"
               description2="string"
               btnText="string"
-            ></ProjectCard>
-            <ProjectCard
-              src="./vercel.svg"
-              description="string"
-              title="string"
-              description2="string"
-              btnText="string"
-            ></ProjectCard>
-            <ProjectCard
-              src="./vercel.svg"
-              description="string"
-              title="string"
-              description2="string"
-              btnText="string"
+              url="https://github.com/Eyeyuel/inventory-app"
             ></ProjectCard>
           </div>
         </div>
       </div>
-      <Title>Small-Projects</Title>
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(150px,300px))] gap-4 ">
-        <SimpleCard
-          title="languages"
-          description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
-          btnText="Github"
-          url="https://github.com/Eyeyuel"
-        />
-        <SimpleCard
-          title="languages"
-          description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
-          btnText="Github"
-          url="https://github.com/Eyeyuel"
-        />
-        <SimpleCard
-          title="languages"
-          description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
-          btnText="Github"
-          url="https://github.com/Eyeyuel"
-        />
-        <SimpleCard
-          title="languages"
-          description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
-          btnText="Github"
-          url="https://github.com/Eyeyuel"
-        />
-        <SimpleCard
-          title="languages"
-          description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
-          btnText="Github"
-          url="https://github.com/Eyeyuel"
-        />
-      </div>
+      {/* <div>
+        <Title>Small-Projects</Title>
+        <div className=" grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(150px,300px))] gap-4 ">
+          <SimpleCard
+            title="languages"
+            description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+            btnText="Github"
+            url="https://github.com/Eyeyuel"
+          />
+          <SimpleCard
+            title="languages"
+            description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+            btnText="Github"
+            url="https://github.com/Eyeyuel"
+          />
+          <SimpleCard
+            title="languages"
+            description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+            btnText="Github"
+            url="https://github.com/Eyeyuel"
+          />
+          <SimpleCard
+            title="languages"
+            description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+            btnText="Github"
+            url="https://github.com/Eyeyuel"
+          />
+          <SimpleCard
+            title="languages"
+            description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+            btnText="Github"
+            url="https://github.com/Eyeyuel"
+          />
+        </div>
+      </div> */}
     </div>
   );
 };

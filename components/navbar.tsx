@@ -90,7 +90,11 @@ const NavBar = () => {
               </div>
               <div className="flex flex-col gap-5 mt-[30%]">
                 {paths.map((path) => (
-                  <Link key={path.path} href={path.path}>
+                  <Link
+                    onClick={() => setNavOpen(false)}
+                    key={path.path}
+                    href={path.path}
+                  >
                     <Button
                       className="text-2xl cursor-pointer"
                       variant="link"

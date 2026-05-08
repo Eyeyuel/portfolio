@@ -53,7 +53,7 @@ export default function RootLayout({
                   </Link>
                 </CardContent>
                 <CardContent>
-                  <Link href={`mailto:eyueltk@gmail.com`}>
+                  <Link href={`mailto:eyueltklu27@gmail.com`}>
                     <svg
                       role="img"
                       viewBox="0 0 24 24"
@@ -66,7 +66,7 @@ export default function RootLayout({
                   </Link>
                 </CardContent>
                 <CardContent>
-                  <Link href={"https://t.me/eyuel_Teklu"}>
+                  <Link href={"https://t.me/Eyuel_Teklu"}>
                     <svg
                       role="img"
                       viewBox="0 0 24 24"
@@ -86,7 +86,7 @@ export default function RootLayout({
               </Card>
             </div>
           </div>
-          <main className="w-full md:w-4/5 lg:w-3/4">
+          <main className="w-full px-2 md:px-4 lg:px-0 md:w-4/5 lg:w-3/4">
             <NavBar />
 
             {children}

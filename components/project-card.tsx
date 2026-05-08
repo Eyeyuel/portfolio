@@ -1,6 +1,8 @@
+import Link from "next/link";
+import Image, { StaticImageData } from "next/image";
+
 import { Button } from "./ui/button";
 import { Card, CardContent, CardDescription, CardTitle } from "./ui/card";
-import Image from "next/image";
 
 const ProjectCard = ({
   src,
@@ -8,32 +10,37 @@ const ProjectCard = ({
   title,
   description2,
   btnText,
+  url,
 }: {
-  src: string;
+  src: string | StaticImageData;
   description?: string;
   title: string;
   description2?: string;
-  btnText: string;
+  btnText?: string;
+  url?: string;
 }) => {
   return (
-    <Card className="flex flex-col rounded-none bg-transparent h-fit gap-4">
+    <Card className="flex h-fit flex-col gap-4 rounded-none bg-transparent">
       <CardContent className="border-b">
-        <Image
-          width={150} // in pixels
-          height={200} // in pixels
-          alt="face image"
-          src={src}
-        />
+        <Image width={150} height={200} alt={title} src={src} />
       </CardContent>
-      <CardDescription className="border-b text-base pl-2">
+
+      <CardDescription className="border-b pl-2 text-base">
         {description}
       </CardDescription>
+
       <CardContent className="flex flex-col gap-2">
         <CardTitle className="text-xl">{title}</CardTitle>
+
         <CardDescription className="text-base">{description2}</CardDescription>
-        <Button className="bg-transparent w-fit text-foreground rounded-none border border-purple">
-          {btnText} &#x21ad;
-        </Button>
+
+        {btnText && url && (
+          <Link href={url} target="_blank">
+            <Button className="w-fit cursor-pointer rounded-none border border-purple bg-transparent text-foreground hover:bg-gray-800">
+              {btnText} &#x21ad;
+            </Button>
+          </Link>
+        )}
       </CardContent>
     </Card>
   );
