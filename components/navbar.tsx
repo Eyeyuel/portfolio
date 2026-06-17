@@ -41,7 +41,7 @@ const NavBar = () => {
     <div>
       <nav className="flex w-full lg:w-full mx-auto bg-red justify-between items-center m-5 lg:mt-10">
         {/* desktop */}
-        <div className="text-2xl">Logo</div>
+        <div className="text-2xl">EYUEL TEKLU</div>
         <div
           className="lg:hidden"
           onClick={() => setNavOpen(navOpen ? false : true)}
@@ -79,7 +79,7 @@ const NavBar = () => {
           >
             <nav className="w-full h-full p-5 overflow-y-auto">
               <div className="flex justify-between">
-                <div className="text-2xl p-1.5">Logo</div>
+                <div className="text-2xl p-1.5">EYUEL TEKLU</div>
                 <Button
                   className="lg:hidden scale-200"
                   variant={"link"}

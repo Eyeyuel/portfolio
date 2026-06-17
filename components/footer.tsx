@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="flex flex-row justify-between lg:px-40">
         <CardContent>
           <CardTitle className="flex gap-1">
-            Logo <CardDescription>eyueltk@gmail.com</CardDescription>
+            EYUEL TEKLU <CardDescription>eyueltk@gmail.com</CardDescription>
           </CardTitle>
           <CardDescription className="text-card-foreground">
             Web designer and fullstack developer
