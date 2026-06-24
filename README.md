@@ -1,106 +1,179 @@
-<h1 align="center">Eyuel Teklu – Portfolio</h1>
+# 👨‍💻 Eyuel Teklu – Portfolio
 
 <p align="center">
-  <strong>A modern, animated portfolio built with Next.js, TypeScript, and Tailwind CSS.</strong>
+  <strong>Modern, responsive, and animated developer portfolio built with Next.js, TypeScript, and Tailwind CSS.</strong>
 </p>
 
 <p align="center">
-  <a href="https://vercel.com/eyeyuel/portfolio/deployments">
-    <img src="https://img.shields.io/github/deployments/eyeyuel/portfolio/production?label=vercel&logo=vercel&style=flat-square" alt="Vercel status">
+  <a href="https://eyuelteklu.vercel.app">
+    <img src="https://img.shields.io/badge/Live-Demo-000?style=for-the-badge&logo=vercel" alt="Live Demo"/>
   </a>
-  <img src="https://img.shields.io/badge/next.js%2014-black?logo=next.js&style=flat-square" alt="Next.js">
-  <img src="https://img.shields.io/badge/typescript-blue?logo=typescript&style=flat-square" alt="TypeScript">
-  <img src="https://img.shields.io/badge/tailwind-38bdf8?logo=tailwindcss&style=flat-square" alt="Tailwind">
-  <img src="https://img.shields.io/badge/motion-framer?logo=framer&style=flat-square&color=purple" alt="Motion">
-  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License">
+  <img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js" alt="Next.js"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind"/>
+  <img src="https://img.shields.io/badge/Motion-8B5CF6?style=for-the-badge&logo=framer&logoColor=white" alt="Motion"/>
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License"/>
+</p>
+
+<p align="center">
+  <a href="https://eyuelteklu.vercel.app">🌐 Live Website</a>
+  •
+  <a href="https://github.com/eyeyuel">GitHub</a>
+  •
+  <a href="YOUR_LINKEDIN_URL">LinkedIn</a>
 </p>
 
 ---
 
-## ✨ About
+## 📖 About The Project
 
-This is my personal portfolio where I showcase my skills, projects, and experience as a **Full‑Stack & Mobile Developer**.  
-The design is clean, dark‑mode ready, and packed with subtle, professional animations that create a memorable user experience.
+This repository contains my personal portfolio website where I showcase my projects, technical skills, and experience as a **Full-Stack Developer**.
 
-**Live site:** [eyuelteklu.vercel.app](https://eyuelteklu.vercel.app)
+The portfolio focuses on:
 
----
+* Clean and modern UI/UX
+* Responsive design across all devices
+* Smooth animations and micro-interactions
+* Performance and accessibility
+* Professional presentation of projects and skills
 
-## 🎯 Features
-
-- **Responsive Design** – works flawlessly on desktop, tablet, and mobile.
-- **Dark / Light Mode** – system‑aware theme toggle.
-- **Smooth Animations** – staggered reveals, spring physics, and micro‑interactions powered by Motion (Framer Motion).
-- **Project Showcase** – cards with image, description, and live/demo links.
-- **About & Skills** – clean sections with fun facts, tech stack, and contact info.
-- **SEO Optimized** – metadata, Open Graph tags, and sitemap for search engines.
-- **404 Page** – custom, animated not‑found page.
+The goal of this project is to create a memorable experience while demonstrating my ability to build production-quality applications with modern web technologies.
 
 ---
 
-## 🧰 Tech Stack
+## ✨ Features
 
-| Category        | Tools / Libraries                                          |
-|-----------------|------------------------------------------------------------|
-| Framework       | [Next.js 14](https://nextjs.org) (App Router)              |
-| Language        | TypeScript                                                 |
-| Styling         | [Tailwind CSS](https://tailwindcss.com)                    |
-| UI Components   | [shadcn/ui](https://ui.shadcn.com)                         |
-| Animations      | [Motion](https://motion.dev) (formerly Framer Motion)      |
-| Icons           | [Lucide React](https://lucide.dev)                         |
-| Fonts           | Fira Code (Google Fonts)                                   |
-| Deployment      | [Vercel](https://vercel.com)                                |
+* 📱 Fully Responsive Design
+* 🌙 Dark & Light Mode
+* ⚡ Smooth Animations and Page Transitions
+* 🗂️ Project Showcase Section
+* 👨‍💻 About Me & Skills Sections
+* 🔍 SEO Optimization
+* 📝 Open Graph & Metadata Support
+* 🚀 Fast Performance and Optimized Assets
+* ❌ Custom 404 Page
+
+---
+
+## 🛠️ Tech Stack
+
+| Category      | Technologies            |
+| ------------- | ----------------------- |
+| Framework     | Next.js 14 (App Router) |
+| Language      | TypeScript              |
+| Styling       | Tailwind CSS            |
+| UI Components | shadcn/ui               |
+| Animations    | Motion                  |
+| Icons         | Lucide React            |
+| Fonts         | Fira Code               |
+| Deployment    | Vercel                  |
+
+---
+
+## 📸 Preview
+
+> Add a screenshot or GIF of your portfolio here.
+
+```md
+![Portfolio Screenshot](./public/screenshot.png)
+```
 
 ---
 
 ## 🚀 Getting Started
 
-1. **Clone the repo**
-   git clone https://github.com/eyeyuel/portfolio.git
-   cd portfolio
-Install dependencies
+### Clone the Repository
 
+```bash
+git clone https://github.com/eyeyuel/portfolio.git
+cd portfolio
+```
+
+### Install Dependencies
+
+```bash
 pnpm install
-Run the development server
+```
 
+### Start Development Server
+
+```bash
 pnpm dev
-Open http://localhost:3000 in your browser.
+```
 
-📦 Available Scripts
-Command	Description
-pnpm dev	Start development server
-pnpm build	Build for production
-pnpm start	Run production build locally
-pnpm lint	Lint the codebase
-🌐 Deployment
-This project is deployed on Vercel.
-Every push to the main branch triggers an automatic production build.
+Open:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## 📦 Available Scripts
+
+| Command      | Description              |
+| ------------ | ------------------------ |
+| `pnpm dev`   | Start development server |
+| `pnpm build` | Build for production     |
+| `pnpm start` | Run production build     |
+| `pnpm lint`  | Lint the project         |
+
+---
+
+## 🌐 Deployment
+
+This project is deployed on **Vercel**.
+
+Every push to the `main` branch automatically triggers a new production deployment.
 
 To deploy your own version:
 
-Push to a GitHub repository.
+1. Fork or clone this repository.
+2. Push it to your GitHub account.
+3. Import the repository into Vercel.
+4. Vercel will automatically detect the Next.js configuration and deploy the application.
 
-Import the repo into Vercel.
+---
 
-Vercel will detect Next.js and use the recommended settings.
+## 📂 Project Structure
 
-📸 Preview
-Add a screenshot of your portfolio here
+```text
+src
+├── app
+├── components
+├── hooks
+├── lib
+├── styles
+└── types
+```
 
-Replace this line with: ![Portfolio screenshot](./public/screenshot.png)
+---
 
-📫 Contact
-I’m open to freelance opportunities and collaborations!
+## 📫 Contact
 
-Telegram: @Eyuel_Teklu
+I'm currently open to:
 
-GitHub: @eyeyuel
+* Full-Time Opportunities
+* Freelance Projects
+* Collaborations
+* Open Source Contributions
 
-Email: eyueltklu27@gmail.com
+**Email:** [eyueltklu27@gmail.com](mailto:eyueltklu27@gmail.com)
 
-LinkedIn: your LinkedIn URL
+**Telegram:** @Eyuel_Teklu
 
-📄 License
-MIT © Eyuel Teklu
+**GitHub:** https://github.com/eyeyuel
 
-<p align="center">Made with ❤️ and a lot of code</p> ```
+**LinkedIn:** YOUR_LINKEDIN_URL
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+<p align="center">
+  Built with ❤️ by <strong>Eyuel Teklu</strong>
+</p>
