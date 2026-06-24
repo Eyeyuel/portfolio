@@ -47,9 +47,9 @@ const page = () => {
             ></ProjectCard>
           </div>
         </div>
-        <Title>Unfinished-projects</Title>
         <div>
-          <Title>Small-Projects</Title>
+          <Title>Unfinished-projects</Title>
+          {/* <Title>Small-Projects</Title> */}
           <div className=" grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(150px,300px))] gap-4 ">
             <SimpleCard
               title="Hirehub"
