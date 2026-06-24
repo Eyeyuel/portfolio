@@ -20,7 +20,7 @@
   •
   <a href="https://github.com/Eyeyuel">GitHub</a>
   •
-  <a href="www.linkedin.com/in/eyuel-teklu">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/eyuel-teklu">LinkedIn</a>
 </p>
 
 ---
