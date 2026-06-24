@@ -56,16 +56,13 @@ The design is clean, dark‑mode ready, and packed with subtle, professional ani
 ## 🚀 Getting Started
 
 1. **Clone the repo**
-   ```bash
    git clone https://github.com/eyeyuel/portfolio.git
    cd portfolio
 Install dependencies
 
-bash
 pnpm install
 Run the development server
 
-bash
 pnpm dev
 Open http://localhost:3000 in your browser.
 
