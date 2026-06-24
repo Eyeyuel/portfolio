@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://eyuelteklu.vercel.app">
+  <a href="https://eyuel-teklu-portfolio.vercel.app/">
     <img src="https://img.shields.io/badge/Live-Demo-000?style=for-the-badge&logo=vercel" alt="Live Demo"/>
   </a>
   <img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js" alt="Next.js"/>
@@ -16,11 +16,11 @@
 </p>
 
 <p align="center">
-  <a href="https://eyuelteklu.vercel.app">🌐 Live Website</a>
+  <a href="https://eyuel-teklu-portfolio.vercel.app/">🌐 Live Website</a>
   •
   <a href="https://github.com/eyeyuel">GitHub</a>
   •
-  <a href="YOUR_LINKEDIN_URL">LinkedIn</a>
+  <a href="www.linkedin.com/in/eyuel-teklu">LinkedIn</a>
 </p>
 
 ---
