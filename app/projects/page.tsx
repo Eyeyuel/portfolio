@@ -1,6 +1,7 @@
 import { DotSquare } from "@/components/dot-square";
 import { IncompleteSquare } from "@/components/incomplete-square";
 import ProjectCard from "@/components/project-card";
+import SimpleCard from "@/components/simple-card";
 import Title from "@/components/title";
 import WorkTitle from "@/components/work-title";
 import mekazino from "@/public/mekazino.png";
@@ -44,6 +45,42 @@ const page = () => {
               btnText="string"
               url="https://github.com/Eyeyuel/inventory-app"
             ></ProjectCard>
+          </div>
+        </div>
+        <Title>Unfinished-projects</Title>
+        <div>
+          <Title>Small-Projects</Title>
+          <div className=" grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(150px,300px))] gap-4 ">
+            <SimpleCard
+              title="Hirehub"
+              description="A job board and recruitment platform connecting employers with top talent. Built with Next.js and NestJS, featuring real-time messaging and role-based dashboards."
+              btnText="Github"
+              url="https://github.com/Eyeyuel"
+            />
+            <SimpleCard
+              title="fitness"
+              description="A fitness management platform for gyms and trainers to assign clients, create workout schedules, and track progress – all in one place."
+              btnText="Github"
+              url="https://github.com/Eyeyuel"
+            />
+            {/* <SimpleCard
+              title="languages"
+              description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+              btnText="Github"
+              url="https://github.com/Eyeyuel"
+            />
+            <SimpleCard
+              title="languages"
+              description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+              btnText="Github"
+              url="https://github.com/Eyeyuel"
+            />
+            <SimpleCard
+              title="languages"
+              description="lorem lsadjflksd saldjf lskdjf asjdflskd flsd lksda slkdfal lasdfj asdlkf jsaldkfjasldk sa"
+              btnText="Github"
+              url="https://github.com/Eyeyuel"
+            /> */}
           </div>
         </div>
       </div>
