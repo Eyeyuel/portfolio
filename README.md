@@ -72,11 +72,7 @@ The goal of this project is to create a memorable experience while demonstrating
 
 ## 📸 Preview
 
-> Add a screenshot or GIF of your portfolio here.
-
-```md
-![Portfolio Screenshot](./public/screenshot.png)
-```
+![Portfolio Screenshot](public/screenshot.png)
 
 ---
 
