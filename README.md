@@ -18,7 +18,7 @@
 <p align="center">
   <a href="https://eyuel-teklu-portfolio.vercel.app/">🌐 Live Website</a>
   •
-  <a href="https://github.com/eyeyuel">GitHub</a>
+  <a href="https://github.com/Eyeyuel">GitHub</a>
   •
   <a href="www.linkedin.com/in/eyuel-teklu">LinkedIn</a>
 </p>
