@@ -7,6 +7,8 @@ import ContactsSection from "@/components/contact-section";
 import Hero from "@/components/hero";
 import ProjectsSection from "@/components/project-section";
 import SkillsSection from "@/components/skills-section";
+import { DotPattern } from "@/components/ui/dot-pattern";
+import { cn } from "@/lib/utils";
 
 const page = () => {
   return (
@@ -24,6 +26,20 @@ const page = () => {
       {/* hero card */}
 
       <Hero />
+
+      {/* <div className="bg-background relative flex size-full items-center justify-center overflow-hidden rounded-lg border p-20">
+        <DotPattern
+          width={10}
+          height={10}
+          cx={1}
+          cy={1}
+          cr={1}
+          // glow={true}
+          className={cn(
+            "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]",
+          )}
+        />
+      </div> */}
 
       {/* Quote */}
 

@@ -6,6 +6,8 @@ import "./globals.css";
 import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 import Contacts from "@/components/top-left-corner-contats";
+import { DotPattern } from "@/components/ui/dot-pattern";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Eyuel Teklu - Full-Stack & Mobile Developer",
@@ -86,6 +88,21 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          {/* Full Page Background Container */}
+          <div className="fixed inset-0 -z-10 h-full w-full">
+            <DotPattern
+              width={15} // Slightly larger for a more professional look
+              height={15}
+              cx={1}
+              cy={1}
+              cr={1}
+              className={cn(
+                // This fade mask is the "professional" secret
+                "mask-[radial-gradient(circle_at_center,white,transparent_80%)]",
+                "text-white/10", // Very subtle opacity
+              )}
+            />
+          </div>
           {/* topleft contacts */}
           <Contacts />
           <main className="w-full px-2 md:px-4 lg:px-0 md:w-4/5 lg:w-3/4">
